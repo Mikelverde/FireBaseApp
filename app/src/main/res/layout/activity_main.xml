@@ -36,6 +36,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="15dp"
         android:text="Lista de Personas"
         android:textSize="24dp"
         android:gravity="center_horizontal"/>

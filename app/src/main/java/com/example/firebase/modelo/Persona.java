@@ -1,10 +1,11 @@
 package com.example.firebase.modelo;
 
 public class Persona {
-    String uid;
-    String nombre;
-    String apellidos;
-    String correo;
+    private String uid;
+    private String nombre;
+    private String apellidos;
+    private String correo;
+    private String contraseña;
 
     public String getUid() {
         return uid;
@@ -38,15 +39,27 @@ public class Persona {
         this.correo = correo;
     }
 
-    public Persona(String uid, String nombre, String apellidos, String correo) {
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
+
+    public Persona(String uid, String nombre, String apellidos, String correo, String contraseña) {
         this.uid = uid;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.correo = correo;
+        this.contraseña=contraseña;
+    }
+
+    public Persona() {
     }
 
     @Override
     public String toString() {
-        return nombre;
+        return (nombre+" "+apellidos);
     }
 }
